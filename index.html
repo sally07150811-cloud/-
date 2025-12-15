@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Travel App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'ind-orange': '#FF6B00',
+              'ind-black': '#1a1a1a',
+              'ind-gray': '#f3f4f6',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Archivo Black', 'sans-serif'],
+            },
+            boxShadow: {
+              'hard': '4px 4px 0px 0px #000000',
+              'hard-sm': '2px 2px 0px 0px #000000',
+              'hard-lg': '8px 8px 0px 0px #000000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Marble-like texture simulation */
+      .bg-marble {
+        background-color: #f3f4f6;
+        background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-marble text-ind-black">
+    <div id="root"></div>
+  </body>
+</html>
